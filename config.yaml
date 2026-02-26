@@ -1,0 +1,15 @@
+# 监控器列表
+monitors:
+  - class: monitors.sdzk_yzk.SdzkYzkMonitor
+    # 监控器专属参数，传入 __init__
+    args:
+      url: "https://www.sdzk.cn/NewsList.aspx?BCID=25&CID=1124"
+
+  - class: monitors.tj_zhaokao_ykxk.TjZhaokaoYkxkMonitor
+    args:
+      url: "http://www.zhaokao.net/ykxk/index.shtml"
+
+# 通知器列表
+notifiers:
+  - class: notifiers.feishu.FeishuNotifier
+  - class: notifiers.onebot.OneBotNotifier
