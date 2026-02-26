@@ -1,0 +1,12 @@
+[project]
+name = "shandong-yzk-monitor"
+version = "0.1.0"
+description = "山东省研究生招考通知监控"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "loguru",
+    "python-dotenv",
+    "pyyaml",
+]
